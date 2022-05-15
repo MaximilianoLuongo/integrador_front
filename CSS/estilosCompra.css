@@ -1,0 +1,67 @@
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.t1 {
+    border: solid rgb(9, 97, 228);
+}
+
+.t2 {
+    border: solid rgb(2, 241, 217);
+}
+
+.t3 {
+    border: solid rgb(213, 228, 9);
+}
+
+.t1, .t2, .t3 {
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.texto-1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nya{
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    padding: 5px;
+}
+.mail{
+    width: 94%;
+    width: 60%;
+    margin-left: 20%;
+    padding: 5px;
+}
+
+
+.pepe, .b-total{
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.pepe1, .pepe2{
+    width: 48.7%;
+    margin: 5px;
+}
+
+.pepe3{
+    display: flex;
+    width: 60%;
+    margin-left:20%
+    }

@@ -65,56 +65,56 @@
     margin: 2px;
 }
 
-#texto-der{
-background: rgb(58, 58, 58);
-float: right;
-width: 49.8%;
-height: 100%;
-margin: 2px;
-color: #fff;
+#texto-der {
+    background: rgb(58, 58, 58);
+    float: right;
+    width: 49.8%;
+    height: 100%;
+    margin: 2px;
+    color: #fff;
 }
 
-#texto-der p, h2{
-padding: 11px;
+#texto-der p, h2 {
+    padding: 11px;
 }
 
-#texto-der a{
-margin-left:11px ;
+#texto-der a {
+    margin-left: 11px;
 }
 
-#conv-orador{
+#conv-orador {
     text-align: center;
     width: 50%;
     margin-left: 25%;
 }
 
-u{
+u {
     border-bottom: 1px dotted #000;
     text-decoration: none;
 }
 
-.p_alineado-izq{
+.p_alineado-izq {
     text-align: left;
     text-decoration: dashed;
     font-size: 12px;
     opacity: .7;
 }
 
-.lgreen{
+.lgreen {
     background-color: rgb(105, 188, 74);
     color: #fff;
 }
 
-.c-fff{
+.c-fff {
     color: #fff;
     margin: 1rem;
     width: 7rem;
-    
+
 }
 
-.bg-footer{
+.bg-footer {
     display: flex;
     background-color: rgb(0, 94, 137);
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
