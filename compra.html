@@ -13,8 +13,6 @@
     </script>
     <link rel="stylesheet" href="./CSS/estilosCompra.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
-
-
 </head>
 
 <body>
@@ -23,11 +21,8 @@
     </header>
     <br>
 
-
-
     <main>
         <div class="contenedor-flex">
-
             <div class="contenedor-tarjetas">
                 <div class="t1">
                     <br>
@@ -54,16 +49,14 @@
                 </div>
 
             </div>
-            <form action="">
+            <form>
                 <div class="texto-1">
                     <p>VENTA</p>
-                    <h2><b>VALOR DE TICKET $200</b></h2>
+                    <h2><b>VALOR DE TICKET $<span id="precio">200</span></b></h2>
                 </div>
 
-
-
                 <div class="nya">
-                    <input type="text" class="form-control " id="" placeholder="Nombre">
+                    <input type="text" class="form-control" id="" placeholder="Nombre">
                     <input type="text" class="form-control" id="" placeholder="Apellido">
                 </div>
                 <div class="mail">
@@ -73,37 +66,32 @@
 
                 <div class="row pepe">
                     <div class="pepe1">
-                        <label for="" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="cantidad" placeholder="cantidad" name="">
+                        <label class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="cantidad" placeholder="cantidad">
                     </div>
 
                     <div class="pepe2">
-                        <label for="sel1" class="form-label">Categoria</label>
-                        <select class="form-select" id="categoria" name="" onchange="">
-                            <option value="40">Estudiante</option>
-                            <option value="100">Trainee</option>
-                            <option value="170">Junior</option>
+                        <label class="form-label">Categoria</label>
+                        <select class="form-select" id="categoria" onchange="seleccionarCategoria()">
+                            <option value="0.8">Estudiante</option>
+                            <option value="0.5">Trainee</option>
+                            <option value="0.15">Junior</option>
                         </select>
                     </div>
                 </div>
                 <br>
-                <div class="alert alert-success b-total">
-                    <strong id="totalPagar">Total a Pagar: $</strong>
-                </div>
+                <button type="button" class="alert alert-success b-total">
+                    Total a Pagar: $<span id="total"></span>
+                </button>
 
-                <div class=" pepe3">
-                    <button type="reset" class="btn btn-success pepe2">Borrar</button>
-                    <button type="button" class="btn btn-success pepe2">Resumen</button>
-
+                <div class="pepe3">
+                    <button type="reset" class="btn btn-success pepe2" id="borrar">Borrar</button>
+                    <button type="button" class="btn btn-success pepe2" id="resumen">Resumen</button>
                 </div>
                 <br>
             </form>
         </div>
-
-
     </main>
-
-
 
     <footer id="footer">
         <!--footer hecho con JS  -->

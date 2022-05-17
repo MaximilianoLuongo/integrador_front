@@ -62,24 +62,25 @@ document.getElementById("footer").innerHTML = `
 `
 //Footer
 
-
-
-// function seleccionarCategoria() {
-//     let categoria = document.getElementById('categoria');
-//     let resultado = categoria.value;
-//     document.getElementById('totalPagar').innerText = `${resultado}`;
-// }
-
-
-const precioTicket= 200;
-
-let nCantidad = parseInt(document.getElementById('cantidad')).value;
-let nCategoria = parseInt(document.getElementById('categoria')).value;
-
-function totalPrecio(){
-   let total= nCantidad*precioTicket-nCategoria;
-
-   document.getElementById('totalPagar').innerText = `${total}`;
-   
-
+function seleccionarCategoria() {
+    let categoria = document.getElementById("categoria")
+    let select = parseFloat(categoria.value)
+    return select
 }
+
+function precioTotal() {
+    let cantidad = parseFloat(document.getElementById("cantidad").value);
+    let precio = parseFloat(document.getElementById("precio").textContent);
+    let descuento = seleccionarCategoria();
+    let totalDescuento = cantidad * precio - ((cantidad * precio) * descuento)
+    document.getElementById("total").innerHTML = totalDescuento;
+}
+
+function borrarElementos() {
+    document.getElementById("total").innerHTML = "";
+}
+
+let resumen = document.getElementById("resumen")
+resumen.addEventListener("click", precioTotal)
+let borrar = document.getElementById("borrar")
+borrar.addEventListener("click", borrarElementos)
